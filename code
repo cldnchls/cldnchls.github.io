@@ -1,7 +1,7 @@
 <html> 
    <head> 
       <script> 
-         //function that display value 
+         //CCTF: This is the function that displays the values. 
          function dis(val) 
          { 
              document.getElementById("result").value+=val 
@@ -21,7 +21,7 @@
              document.getElementById("result").value = "" 
          } 
       </script> 
-      <!-- for styling -->
+      <!-- CCTF: This section is for stylingthe calculator. -->
       <style> 
          .title{ 
          margin-bottom: 10px; 
@@ -29,6 +29,7 @@
          width: 210px; 
          color:#0EB7B2; 
          border: solid black 2px; 
+         font: Optima;
          } 
   
          input[type="button"] 
@@ -47,9 +48,9 @@
          } 
       </style> 
    </head> 
-   <!-- create table -->
+   <!-- CCTF: This is the portion that creates the table of the calculator. This also shows codes that will let the screen display what number or operation will the user click. -->
    <body> 
-      <div class = title >CLAU-CURATOR</div> 
+      <div class = title >CALCULATOR</div> 
       <table border="1"> 
          <tr> 
             <td colspan="3"><input type="text" id="result"/></td> 
@@ -81,7 +82,7 @@
             <td><input type="button" value="0" onclick="dis('0')"/> </td> 
             <!-- solve function call function solve to evaluate value -->
             <td><input type="button" value="=" onclick="solve()"/> </td> 
-            <td><input type="button" value="*" onclick="dis('+')"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
          </tr> 
       </table> 
    </body> 
